@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+        <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="GraphQL, Version=7.2.1.0, Culture=neutral, PublicKeyToken=e6238258560628ee">
+        <HintPath>..\..\..\memphis.net\examples\Producer\bin\Debug\net6.0\GraphQL.dll</HintPath>
+      </Reference>
+      <Reference Include="GraphQL.SystemTextJson, Version=7.2.1.0, Culture=neutral, PublicKeyToken=e6238258560628ee">
+        <HintPath>..\..\..\memphis.net\examples\Producer\bin\Debug\net6.0\GraphQL.SystemTextJson.dll</HintPath>
+      </Reference>
+      <Reference Include="GraphQLParser, Version=8.1.0.0, Culture=neutral, PublicKeyToken=e6238258560628ee">
+        <HintPath>..\..\..\memphis.net\examples\Producer\bin\Debug\net6.0\GraphQLParser.dll</HintPath>
+      </Reference>
+      <Reference Include="Memphis.Client, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\memphis.net\src\Memphis.Client\bin\Debug\netstandard2.0\Memphis.Client.dll</HintPath>
+      </Reference>
+      <Reference Include="NATS.Client, Version=1.0.2.0, Culture=neutral, PublicKeyToken=5b58bc7249e111a9">
+        <HintPath>..\..\..\memphis.net\examples\Consumer\bin\Debug\net6.0\NATS.Client.dll</HintPath>
+      </Reference>
+      <Reference Include="Producer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\..\memphis.net\examples\Producer\bin\Debug\net6.0\Producer.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
