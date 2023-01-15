@@ -1,0 +1,17 @@
+https://repo1.maven.org/maven2/io/debezium/debezium-server-dist/2.1.1.Final/debezium-server-dist-2.1.1.Final.tar.gz
+
+curl -s https://repo1.maven.org/maven2/io/debezium/debezium-server-dist/2.1.1.Final/debezium-server-dist-2.1.1.Final.tar.gz -o debezium-server-dist-2.1.1.Final.tar.gz
+
+sudo tar -xzf debezium-server-dist-2.1.1.Final.tar.gz
+
+## debezium conf
+```
+debezium.sink.type=nats-jetstream
+debezium.sink.nats-jetstream.url=nats://localhost:6666
+debezium.sink.nats-jetstream.create-stream=true
+debezium.source.connector.class=io.debezium.connector.mongodb.MongoDbConnector
+debezium.source.mongodb.connection.string=memphis-cdc-debezium.vslrblw.mongodb.net
+debezium.source.mongodb.user=memphis*****
+debezium.source.mongodb.password=memph*****
+debezium.source.topic.prefix=tutorial
+```
